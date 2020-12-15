@@ -2,7 +2,7 @@
 
     include './View/header.php';
     include './View/navbar.php';
-    // include './Controller/login_check.php';
+    // include './Controller/admin_check.php';
     include './Controller/db_conn.php';
 
         $database = new Database();

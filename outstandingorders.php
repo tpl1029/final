@@ -1,5 +1,6 @@
 <?php 
     include './View/header.php';
+    // include './Controller/login_check.php';
     include './View/navbar.php';
     include './Controller/db_conn.php';
     include './Controller/display_view.php';
@@ -14,11 +15,12 @@
 
     ?>
 
-<div class='' id="">
+
         <!-- Loops though people (db rows) -->
          
-
-            
+    <h1 class="order-title">Outstanding Orders</h1>
+    
+ <div class = "view">       
 <?php
 
 
