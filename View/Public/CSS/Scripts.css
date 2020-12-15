@@ -1,6 +1,6 @@
 html, body{
     height: auto;
-    background-color: rgb(56, 88, 117);
+    background-color:white;
     margin: 0;
 }
 
@@ -13,4 +13,66 @@ div.form-css{
     margin: auto;
     background: white;
     padding: 30px;
+}
+
+.web-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.navbar-grid{
+    display: grid;
+    grid-template-columns: 1fr 355px 355px 355px 1fr;
+    grid-template-rows: auto auto;
+    grid-row: 1;
+    border-bottom: solid 1px black;
+}
+
+/* .center-grid{
+    grid-column: 2;
+} */
+
+.left-grid{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+/* .center-grid{
+    text-align: center;
+    display: inline-block;
+} */
+
+.fort{
+    grid-column: 3/4;
+    grid-row: 1;
+    text-align: center;
+    font-size: 45px;
+}
+
+.Home{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.Manage{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.Orders{
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.right-grid{
+    grid-column: 5;
+    grid-row: 2;
+    margin-left: auto;
+}
+
+#link{
+    margin-top: auto;
+    font-size: 30px;
+    text-align: center;
 }
