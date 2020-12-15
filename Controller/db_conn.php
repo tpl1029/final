@@ -4,7 +4,7 @@ class Database {
 
     private $host = 'localhost';
     private $user = 'root';
-    private $pass = 'root';
+    private $pass = 'Fort123!';
     private $dbname = 'fortisurerepair';
 
     public $conn;
