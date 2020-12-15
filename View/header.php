@@ -1,11 +1,6 @@
 <?php
     session_start();
-    include './Controller/db_conn.php';
 
-    $database = new Database();
-    $db = $database->connect();
-
-    include './Controller/user_login.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
