@@ -8,7 +8,7 @@ class Logout {
     public function logoutUser($data)
         {
             // variables
-                $userName = $data["username"];        
+                $userName = $data;        
 
                 $query = "UPDATE users SET Status = 'I' WHERE UserName = '$userName'";
 

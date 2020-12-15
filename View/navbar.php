@@ -16,8 +16,8 @@
 
 
         <div class="right-grid">
-            <form method="post" action="">
-        <a href="./Controller/logout.php" id="logout" name="logout" >Log Out</a>
+            <form method="post" action="./Controller/logout.php">
+            <input type="submit" class="btn btn-primary" value="Logout" name="logout" id="logout" >
         </form>
         </div>
     </div>

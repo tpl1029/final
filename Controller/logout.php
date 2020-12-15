@@ -1,21 +1,22 @@
 <?php
-    include '../View/header.php';
-    include './Controller/db_conn.php';
+    session_start();
+    include './db_conn.php';
     
     $database = new Database();
     $db = $database->connect();
 
     if(isset($_POST["logout"])){
 
-    require '../Model/query-logout';
+    include '../Model/query-logout.php';
 
-    $username =  $_SESSION["username"];
+    $data =  $_SESSION["username"];
 
     $logout = new Logout($db);
-    $logout->logoutUser($username);
+    $logout->logoutUser($data);
+    
 
-    header("Location:./logout.php");
-
+    }else{
+        header("Location:../outstandingorders.php");
     }
 
 ?>
