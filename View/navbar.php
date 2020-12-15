@@ -1,5 +1,6 @@
 <!-- Navbar -->
-    <div class="navbar-grid">
+    <div style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./View/Public/Images/car.jpg'); background-position: center; background-repeat: no-repeat;
+        background-size: cover;" class="navbar-grid">
         <div class="left-grid">
             <img src="./View/Public/Images/logo.png" alt="Fortisure Logo">
         </div>
