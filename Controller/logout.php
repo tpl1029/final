@@ -1,5 +1,5 @@
 <?php
-    include '';
+    include '../View/header.php';
     include './Controller/db_conn.php';
     
     $database = new Database();
