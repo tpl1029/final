@@ -5,7 +5,7 @@ class Database {
     private $host = 'localhost';
     private $user = 'root';
     private $pass = 'root';
-    private $dbname = 'final';
+    private $dbname = 'fortisurerepair';
 
     public $conn;
 
