@@ -1,6 +1,7 @@
 <?php 
-    include './Controller/pizza-display.php';
-    include './Model/query-pizza.php';
+    include './Controller/db_conn.php';
+    include './Controller/display_view.php';
+    include './Model/query-view.php';
 
     $database = new Database();
     $db = $database->connect();
@@ -17,7 +18,22 @@
 
             
 <?php
-            while ($row = $pizzaGet->fetch(PDO::FETCH_ASSOC)) {
+
+
+echo "<table>
+        <tr >
+          <th> First Name</th>
+          <th>Last Name</th>
+          <th>Make</th>
+          <th>Model</th>
+          <th>Year</th>
+          <th>Vin</th>
+          <th>Order Amount</th>   
+          <th>Payment Amount</th>   
+          <th>Outstanding Balance</th>                     
+          </tr>";
+                      
+          while ($row = $viewGet->fetch(PDO::FETCH_ASSOC)) {
                 // variables
 
                 $FirstName = $row['FirstName'];
@@ -26,14 +42,17 @@
                 $model = $row['Model'];
                 $year = $row['Year'];
                 $vin = $row['Vin'];
-                $orderamount = $row['comments'];
-                $paymentamount = $row['comments'];
-                $outstandingbalance = $row['comments'];
+                $orderamount = $row['OrderAmount'];
+                $paymentamount = $row['PaymentAmount'];
+                $outstandingbalance = $row['OutstandingBalance'];
                 // variables
 
-                makePizzaTable($personName, $slicesEaten, $comments); 
+                makeViewTable($FirstName, $LastName, $make, $model, $year, $vin, $orderamount, $paymentamount, $outstandingbalance); 
 
             } 
+
+            echo "    </table>
+  ";
             ?>
 
 
