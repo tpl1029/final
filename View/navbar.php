@@ -17,8 +17,8 @@
 
         <div class="right-grid">
             <form method="post" action="./Controller/logout.php">
-            <input type="submit" class="btn btn-primary" value="Logout" name="logout" id="logout" >
-        </form>
+                <input type="submit" class="btn btn-primary" value="Logout" name="logout" id="logout" >
+            </form>
         </div>
     </div>
 <!-- Navbar -->

@@ -112,4 +112,26 @@ div.form-css{
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.service{
+    grid-column: 1;
+    grid-row: 1;
+    margin: auto;
+}
+
+.repair{
+    grid-column: 2;
+    grid-row: 2;
+    margin: auto;
+}
+
+.paper{
+    grid-column: 1;
+    grid-row: 3;
+    margin: auto;
 }
