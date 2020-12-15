@@ -36,7 +36,7 @@ if(isset($_POST["login"])){
 
         if($_SESSION["loggedin"] == true) 
         {              
-            $welcome = "Hello" . " " .  $username . "!";
+            header("Location:./insertuser.php");
 
 
 
