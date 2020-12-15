@@ -1,44 +1,26 @@
 <?php
 
-function makeViewTable( $personName, $slicesEaten, $comments)
+function makeViewTable( $FirstName, $LastName, $make, $model, $year, $vin, $orderamount, $paymentamount, $outstandingbalance)
     {
-    if (is_null ($comments)) {
-        echo "
-            
-        <div class='pizza-time-person'> 
-
-            <div class = 'pizza-time-name'>
-            <h2 > $personName </h2>
-            <h2> $comments</h2>
-            </div>
-
-            <div class = pizza-time-slices-eaten>
-            <h2>Slices Eaten:</h2>
-            <h2> $slicesEaten </h2>            
-            </div>
-
-        </div>  ";
-
-     } 
     
-    else {
         echo "
 
-        <div class='pizza-time-person'> 
+        <div class=''> 
 
-            <div class = 'pizza-time-name'>
-                <h2 > $personName </h2>
-                <h2> \"$comments\"</h2>
-            </div>
+        <tr>
+        <td>{$FirstName}</td>
+        <td>{$LastName}</td>
+        <td>{$make}</td>
+        <td>{$model}</td>
+        <td>{$year}</td>
+        <td>{$vin}</td>
+        <td>{$orderamount}</td>   
+        <td>{$paymentamount}</td>   
+        <td>{$outstandingbalance}</td>       
+    </tr>";
+    
 
-            <div class = pizza-time-slices-eaten>
-                <h2>Slices Eaten:</h2>
-                <h2> $slicesEaten </h2>            
-            </div>
-
-    </div>  ";
-
-     }
+     
 
     }
 
