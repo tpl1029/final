@@ -1,5 +1,16 @@
 html, body{
     height: auto;
-    background-color: rgb(199, 72, 72);
+    background-color: rgb(56, 88, 117);
     margin: 0;
+}
+
+.text{
+    text-align: center;
+}
+
+div.form-css{
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 30px;
 }
