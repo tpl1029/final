@@ -15,6 +15,13 @@ div.form-css{
     padding: 30px;
 }
 
+.user-css{
+    width: 500px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+}
+
 .web-grid{
     display: grid;
     grid-template-columns: 1fr;

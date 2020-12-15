@@ -1,7 +1,11 @@
 <?php 
 
     include './view/header.php';
+    include './Controller/db_conn.php';
 
+    $database = new Database();
+    $db = $database->connect();
+    include './Controller/user_login.php';
 ?>
 
         <div class="text">

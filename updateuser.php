@@ -1,7 +1,8 @@
 <?php
 
     include './View/header.php';
-    // include './Controller/login_check.php';
+    include './View/navbar.php';
+    include './Controller/login_check.php';
     include './Controller/db_conn.php';
 
         $database = new Database();
@@ -13,10 +14,11 @@
 
         
             <h2>Update a User</h2>
-            <p>Please fill out this form to update a user.</p>
+            <p>Please fill out this form to update a user. Note: If you leave a
+               field blank <br> that information will not be updated!</p>
        
 
-        <div class="">
+        <div class="user-css">
        
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
@@ -53,7 +55,7 @@
                     <span class="help-block"><?php echo $update_confirm_password_err; ?></span>
                 </div>
                                
-                    <input type="submit" class="btn btn-primary" value="Submit" name="submit" id="submit">                    
+                    <input type="submit" class="btn btn-primary" value="Update User" name="submit" id="submit">                    
                     <br> <span class="help-block"><?php echo $welcome; ?></span>
                 </div>
                 
@@ -71,6 +73,7 @@
            </script>
 
    
-
-
+<?php
+include './View/footer.php';
+?>
 

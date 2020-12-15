@@ -1,7 +1,8 @@
 <?php
 
     include './View/header.php';
-    // include './Controller/login_check.php';    
+    include './View/navbar.php';
+    include './Controller/login_check.php';    
     include './Controller/db_conn.php';
 
         $database = new Database();
@@ -16,7 +17,8 @@
             <p>Please fill out this form to create an account.</p>
        
 
-        <div class="">
+        <div class="user-css">
+
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                     <label>Username</label>
@@ -39,11 +41,12 @@
                     <span class="help-block"><?php echo $confirm_password_err; ?></span>
                 </div>
                                
-                    <input type="submit" class="btn btn-primary" value="Submit" name="submit" id="submit">                    
+                    <input type="submit" class="btn btn-primary" value="Create User" name="submit" id="submit">                    
                     <br> <span class="help-block"><?php echo $welcome; ?></span>
-                </div>
+                
                 
             </form>
+
         </div>
 
         <script>
@@ -54,7 +57,9 @@
            history.pushState({}, '', '');
            </script>
 
-   
+<?php
+include './View/footer.php';
+?>
 
 
 

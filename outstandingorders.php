@@ -1,4 +1,6 @@
 <?php 
+    include './View/header.php';
+    include './View/navbar.php';
     include './Controller/db_conn.php';
     include './Controller/display_view.php';
     include './Model/query-view.php';
@@ -62,5 +64,9 @@ echo "<table>
 
         <!-- Loops through people (db rows) -->
     </div>
+
+    <?php
+include './View/footer.php';
+?>
 
 

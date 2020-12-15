@@ -1,7 +1,8 @@
 <?php
 
     include './View/header.php';
-    // include './Controller/login_check.php';
+    include './View/navbar.php';
+    include './Controller/login_check.php';
     include './Controller/db_conn.php';
 
         $database = new Database();
@@ -16,7 +17,7 @@
             <p>Please enter the username and password of the account you wish to delete.</p>
        
 
-        <div class="">
+        <div class="user-css">
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                     <label>Username</label>
@@ -31,7 +32,7 @@
                 </div>
                
                 <div>               
-                    <input type="submit" class="btn btn-primary" value="Submit" name="submit" id="submit">                    
+                    <input type="submit" class="btn btn-primary" value="Delete User" name="submit" id="submit">                    
                     <br> <span class="help-block"><?php echo $welcome; ?></span>
                 </div>
                 
@@ -48,3 +49,6 @@
 
 
 
+<?php
+include './View/footer.php';
+?>

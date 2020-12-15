@@ -8,14 +8,16 @@
 
         <!-- <div class="center-grid"> -->
             <a href="./index.php" id="link" class="Home">Home</a>
-            <a href="./Management.php" id="link" class="Manage"><span class="Manage">Manage Users</span></a>
-            <a href="./Orders.php" id="link" class="Orders">Outstanding Orders</a>
+            <a href="./manage.php" id="link" class="Manage"><span class="Manage">Manage Users</span></a>
+            <a href="./outstandingorders.php" id="link" class="Orders">Outstanding Orders</a>
         <!-- </div> -->
 
 
 
         <div class="right-grid">
-            <button>Logout</button>
+            <form method="post" action="">
+        <a href="./Controller/logout.php" id="logout" name="logout" >Log Out</a>
+        </form>
         </div>
     </div>
 <!-- Navbar -->
