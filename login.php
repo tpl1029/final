@@ -34,14 +34,14 @@
     
 <body>
 
-<div class ="">
+<div class ="web-grid">
 
-<div class="">
-<h2>Login</h2>
+    <div class="text">
+        <h2>Login</h2>
         <p>Please fill in your credentials to login.</p>
-        </div>
+    </div>
 
-        <div class="">
+    <div class="form-css">
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label>Username</label>
@@ -59,7 +59,7 @@
             </div>
             
         </form>
-        </div>
+    </div>
 
 </div>
 
