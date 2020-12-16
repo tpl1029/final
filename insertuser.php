@@ -10,10 +10,10 @@
 
     include './Controller/create_user.php';
 ?>
-<div class = "manage-grid">
-    <div class="insert-background">
+<div class = "insert-grid">
+    <div class="insert-content">
 
-        <div class="manage-text">
+        <div class="insert-text">
             <h2>Create a New User</h2>
             <p>Please fill out this form to create an account.</p>
         </div>
@@ -57,12 +57,12 @@
 
            history.pushState({}, '', '');
            </script>
-
-<?php
-include './View/footer.php';
-?>
-
     </div>
+        <?php
+        include './View/footer.php';
+        ?>
+
+    
 
 </div>
 

@@ -10,10 +10,10 @@
 
     include './Controller/delete_user.php';
 ?>
-<div class = "manage-grid">
-    <div class = "delete-background">
+<div class = "delete-grid">
+    <div class = "delete-content">
 
-    <div class="manage-text">
+    <div class="delete-text">
             <h2>Delete User</h2>
             <p>Please enter the username and password of the account you wish to delete.</p>
     </div>   
@@ -48,12 +48,12 @@
 
    
 
-
+</div>
 
 <?php
 include './View/footer.php';
 ?>
 
-    </div>
+    
 
 </div>

@@ -37,6 +37,21 @@ div.form-css{
     border-bottom: solid 1px black;
 }
 
+.footer{
+    grid-column: 1;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 275px auto ;
+    grid-template-rows: auto;
+    border-top: solid 1px black;
+}
+
+.footer-text{
+    grid-row: 1;
+    grid-column: 1;
+    color: white;
+}
+
 /* .center-grid{
     grid-column: 2;
 } */
@@ -97,27 +112,6 @@ div.form-css{
     grid-template-rows: auto auto auto;
 }
 
-.table, th, td {
-    border: 2px solid black;
-    border-collapse: collapse;
-    padding: 5px;
-         }
-
-.order-title{
-    grid-row: 2;
-}
-
-.view{
-    grid-row: 3;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    margin-top: 24px;
-    margin-bottom: 24px;
-}
-
 .service{
     grid-column: 1;
     grid-row: 1;
@@ -142,9 +136,10 @@ div.form-css{
             grid-column: 1;
             grid-row: 2;
             display: grid;
-            grid-template-columns: 1fr 335px 335px 355px 1fr;
-            grid-template-rows: auto auto 643px;
+            grid-template-columns: 1;
+            grid-template-rows: auto 735px 50px;
             background-color: #252e5e;
+            
         }
 
         .manage-menu-text{
@@ -153,44 +148,101 @@ div.form-css{
             color: white;
         }
 
-        .manage-menu-bttns{
-            margin-left: auto;
-            
+        .manage-menu-content{
+            grid-column: 1;
+            grid-row: 2;
+            display: grid;
+            grid-template-columns: auto 325px 325px 325px auto;
+            grid-template-rows: auto;
         }
         .manage-menu-btn1{
             grid-column: 2;
-            grid-row: 2;
+            grid-row: 1;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .manage-menu-btn2{
             grid-column: 3;
-            grid-row: 2;
+            grid-row: 1;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .manage-menu-btn3{
             grid-column: 4;
-            grid-row: 2;
+            grid-row: 1;
+            margin-left: auto;
+            margin-right: auto;
         }
 
     /* Menu */
 
     /* management options */
-        .manage-grid{
+        .insert-grid{
             display: grid;
             grid-column: 1;
             grid-row: 2;
             grid-template-columns: 1;
-            grid-template-rows: 785px;
+            grid-template-rows: auto 735px 50px;
+            background-color: #9f1224;
         }
 
-        .manage-text{
-            color: white;
+        .insert-text{
+            grid-column: 1;
+            grid-row: 1;
+            color: white;            
         }
 
-        .insert-background{
+        .insert-content{
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .update-grid{
+            display: grid;
+            grid-column: 1;
+            grid-row: 2;
+            grid-template-columns: 1;
+            grid-template-rows: auto 735px 50px;
+            background-color: #3b3a6d;
+        }
+
+        .update-text{
+            grid-column: 1;
+            grid-row: 1;
+            color: white;            
+        }
+
+        .update-content{
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .delete-grid{
+            display: grid;
+            grid-column: 1;
+            grid-row: 2;
+            grid-template-columns: 1;
+            grid-template-rows: auto 735px 50px;
+            background-color: #252e5e;
+        }
+
+        .delete-text{
+            grid-column: 1;
+            grid-row: 1;
+            color: white;            
+        }
+
+        .delete-content{
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        /* .insert-background{
             background-color: #9f1224;
             grid-row: 1;
-        }
+        } */
 
         .update-background{
             background-color: #3b3a6d;
@@ -204,3 +256,54 @@ div.form-css{
     /* management options */
 
 /* Management */
+
+/* Orders */
+
+    .orders-grid{
+        display: grid;
+        grid-column: 1;
+        grid-row: 2;
+        grid-template-columns: 1;
+        grid-template-rows: auto auto;
+        background-color: #9f1224;
+    }
+
+    .orders-text{
+        grid-column: 1;
+        grid-row: 1;
+        color: white;
+    }
+
+    .orders-table{
+        grid-column: 1;
+        grid-row: 2;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .table, th, td {
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+        background: white;
+            }
+
+
+
+    /* .view{
+        grid-row: 3;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    } */
+
+
+
+
+/* Orders */

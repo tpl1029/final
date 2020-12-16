@@ -10,14 +10,14 @@
 
     include './Controller/update_user.php';
 ?>
-<div class = "manage-grid">
-    <div class = "update-background">
+<div class = "update-grid">
+    <div class = "update-content">
 
-    <div class="manage-text">
-            <h2>Update a User</h2>
-            <p>Please fill out this form to update a user. Note: If you leave a
-               field blank <br> that information will not be updated!</p>
-     </div>  
+        <div class="update-text">
+                <h2>Update a User</h2>
+                <p>Please fill out this form to update a user. Note: If you leave a
+                field blank <br> that information will not be updated!</p>
+        </div>  
 
         <div class="user-css">
        
@@ -58,7 +58,7 @@
                                
                     <input type="submit" class="btn btn-primary" value="Update User" name="submit" id="submit">                    
                     <br> <span class="help-block"><?php echo $welcome; ?></span>
-                </div>
+            </div>
                 
             </form>
         </div>
@@ -74,10 +74,9 @@
            </script>
 
    
-<?php
-include './View/footer.php';
-?>
+        <?php
+        include './View/footer.php';
+        ?>
 
 </div>
 
-</div>
