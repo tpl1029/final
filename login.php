@@ -1,12 +1,15 @@
-<?php 
+<body class='login'>
+    <div class="web-grid" id="background">
 
-    include './view/header.php';
-    include './Controller/db_conn.php';
+        <?php 
+            include './view/header.php';
+            include './Controller/db_conn.php';
 
-    $database = new Database();
-    $db = $database->connect();
-    include './Controller/user_login.php';
-?>
+            $database = new Database();
+            $db = $database->connect();
+            include './Controller/user_login.php';
+        ?>
+
 
         <div class="text">
             <h2>Login</h2>

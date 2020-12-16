@@ -1,12 +1,15 @@
-<?php
+<body class='delete'>
+    <div class="web-grid">
+
+        <?php
 
     include './View/header.php';
     include './View/navbar.php';
     // include './Controller/admin_check.php';
     include './Controller/db_conn.php';
 
-        $database = new Database();
-        $db = $database->connect();
+                $database = new Database();
+                $db = $database->connect();
 
     include './Controller/delete_user.php';
 ?>

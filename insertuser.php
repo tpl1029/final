@@ -1,17 +1,25 @@
-<?php
+<body class='insert'>
+    <div class="web-grid">
 
+        <?php
     include './View/header.php';
     include './View/navbar.php';
     // include './Controller/admin_check.php';    
     include './Controller/db_conn.php';
 
-        $database = new Database();
-        $db = $database->connect();
 
     include './Controller/create_user.php';
 ?>
 <div class = "insert-grid">
     <div class="insert-content">
+                $database = new Database();
+                $db = $database->connect();
+
+            include './Controller/create_user.php';
+        ?>
+            
+<div class = "manage-grid">
+    <div class="insert-background">
 
         <div class="insert-text">
             <h2>Create a New User</h2>
