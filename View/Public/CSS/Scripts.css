@@ -207,53 +207,6 @@ div.form-css{
     margin-bottom: 24px;
 }
 
-
-/* management */
-    /* Menu */
-.manage-menu-grid{
-    grid-column: 1;
-    grid-row: 2;
-    display: grid;
-    grid-template-columns: 1fr 335px 335px 355px 1fr;
-    grid-template-rows: auto auto 643px;
-}
-
-.manage-menu-text{
-    grid-column: 1;
-    grid-row: 1;
-    color: white;
-}
-
-.manage-menu-bttns{
-    margin-left: auto;
-    
-}
-.manage-menu-btn1{
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.manage-menu-btn2{
-    grid-column: 3;
-    grid-row: 2;
-}
-
-.manage-menu-btn3{
-    grid-column: 4;
-    grid-row: 2;
-}
-
-/* Menu */
-
-/* management options */
-.manage-grid{
-    display: grid;
-    grid-column: 1;
-    grid-row: 2;
-    grid-template-columns: 1;
-    grid-template-rows: 785px;
-}
-
 /* management */
     /* Menu */
         .manage-menu-grid{
@@ -300,18 +253,7 @@ div.form-css{
             margin-right: auto;
         }
 
-.insert-background{
-    grid-row: 1;
-}
-
-.update-background{
-    grid-row: 1;
-}
-
-.delete-background{
-    grid-row: 1;
-}
-/* management options */
+    /* Menu */
 
     /* management options */
         .insert-grid{

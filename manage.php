@@ -1,10 +1,7 @@
-<body class='manage'>
-    <div class="web-grid">
-
-    <?php
-        include './View/header.php';
-        include './View/navbar.php';
-        // include './Controller/admin_check.php';
+<?php
+    include './View/header.php';
+    include './View/navbar.php';
+    // include './Controller/admin_check.php';
     ?>
 
     <div class = "manage-menu-grid">

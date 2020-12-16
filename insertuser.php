@@ -1,31 +1,23 @@
-<body class='insert'>
-    <div class="web-grid">
+<?php
 
-        <?php
     include './View/header.php';
     include './View/navbar.php';
     // include './Controller/admin_check.php';    
     include './Controller/db_conn.php';
 
+        $database = new Database();
+        $db = $database->connect();
 
     include './Controller/create_user.php';
 ?>
-<div class = "insert-grid">
-    <div class="insert-content">
-                $database = new Database();
-                $db = $database->connect();
+    <div class="insert-grid">
 
-            include './Controller/create_user.php';
-        ?>
-            
-<div class = "manage-grid">
-    <div class="insert-background">
-
-        <div class="insert-text">
+        <div class = "insert-text">
             <h2>Create a New User</h2>
             <p>Please fill out this form to create an account.</p>
-        </div>
+        </div>       
 
+        <div class = "insert-content">
         <div class="user-css">
 
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
@@ -57,6 +49,7 @@
             </form>
 
         </div>
+        </div>
 
         <script>
            document.getElementById('username').value = '';
@@ -65,12 +58,10 @@
 
            history.pushState({}, '', '');
            </script>
-    </div>
-        <?php
-        include './View/footer.php';
-        ?>
 
-    
+<?php
+include './View/footer.php';
+?>
 
 </div>
 

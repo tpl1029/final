@@ -12,11 +12,7 @@
 ?>
 <div class = "update-grid">
     <div class = "update-content">
-            $database = new Database();
-            $db = $database->connect();
 
-            include './Controller/update_user.php';
-        ?>
     
 <div class = "manage-grid">
     <div class = "update-background">
