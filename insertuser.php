@@ -10,12 +10,13 @@
 
     include './Controller/create_user.php';
 ?>
-    
+<div class = "manage-grid">
+    <div class="insert-background">
 
-        
+        <div class="manage-text">
             <h2>Create a New User</h2>
             <p>Please fill out this form to create an account.</p>
-       
+        </div>
 
         <div class="user-css">
 
@@ -61,5 +62,8 @@
 include './View/footer.php';
 ?>
 
+    </div>
+
+</div>
 
 
