@@ -2,11 +2,11 @@
     <div class="web-grid">
 
         <?php
+    include './View/header.php';
+    include './View/navbar.php';
+    // include './Controller/admin_check.php';    
+    include './Controller/db_conn.php';
 
-            include './View/header.php';
-            include './View/navbar.php';
-            // include './Controller/login_check.php';    
-            include './Controller/db_conn.php';
 
                 $database = new Database();
                 $db = $database->connect();
@@ -14,11 +14,13 @@
             include './Controller/create_user.php';
         ?>
             
+<div class = "manage-grid">
+    <div class="insert-background">
 
-        
+        <div class="manage-text">
             <h2>Create a New User</h2>
             <p>Please fill out this form to create an account.</p>
-       
+        </div>
 
         <div class="user-css">
 
@@ -64,5 +66,8 @@
 include './View/footer.php';
 ?>
 
+    </div>
+
+</div>
 
 

@@ -3,22 +3,23 @@
 
         <?php
 
-            include './View/header.php';
-            include './View/navbar.php';
-            // include './Controller/login_check.php';
-            include './Controller/db_conn.php';
+    include './View/header.php';
+    include './View/navbar.php';
+    // include './Controller/admin_check.php';
+    include './Controller/db_conn.php';
 
                 $database = new Database();
                 $db = $database->connect();
 
-            include './Controller/delete_user.php';
-        ?>
-    
+    include './Controller/delete_user.php';
+?>
+<div class = "manage-grid">
+    <div class = "delete-background">
 
-        
+    <div class="manage-text">
             <h2>Delete User</h2>
             <p>Please enter the username and password of the account you wish to delete.</p>
-       
+    </div>   
 
         <div class="user-css">
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
@@ -55,3 +56,7 @@
 <?php
 include './View/footer.php';
 ?>
+
+    </div>
+
+</div>
