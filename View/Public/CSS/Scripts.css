@@ -214,7 +214,7 @@ div.form-css{
             grid-row: 2;
             display: grid;
             grid-template-columns: 1;
-            grid-template-rows: auto 735px 50px;
+            grid-template-rows: auto 75vh 50px;
             background-color: #252e5e;
             
         }
@@ -261,7 +261,7 @@ div.form-css{
             grid-column: 1;
             grid-row: 2;
             grid-template-columns: 1;
-            grid-template-rows: auto 735px 50px;
+            grid-template-rows: auto 75vh 50px;
             background-color: #9f1224;
         }
 
@@ -281,7 +281,7 @@ div.form-css{
             grid-column: 1;
             grid-row: 2;
             grid-template-columns: 1;
-            grid-template-rows: auto 735px 50px;
+            grid-template-rows: auto 75vh 50px;
             background-color: #3b3a6d;
         }
 
@@ -301,7 +301,7 @@ div.form-css{
             grid-column: 1;
             grid-row: 2;
             grid-template-columns: 1;
-            grid-template-rows: auto 735px 50px;
+            grid-template-rows: auto 80vh 50px;
             background-color: #252e5e;
         }
 
