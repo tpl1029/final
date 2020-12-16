@@ -27,6 +27,3 @@
 
     <title>My Website</title>
 </head>
-    
-<body>
-    <div class ="web-grid">
