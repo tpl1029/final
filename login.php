@@ -1,5 +1,4 @@
 <body class='login'>
-    <div class="web-grid" id="background">
 
         <?php 
             include './view/header.php';

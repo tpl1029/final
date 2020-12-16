@@ -1,8 +1,9 @@
+<body class="manage">
 <?php
     include './View/header.php';
     include './View/navbar.php';
     // include './Controller/admin_check.php';
-    ?>
+?>
 
     <div class = "manage-menu-grid">
 
@@ -23,15 +24,15 @@
                 <div class = "manage-menu-btn3">
                     <a href="./deleteuser.php" id="manage-link" class="btn btn-success">Delete A User</a>
                 </div>
-</div>
+            </div>
         </div>        
 
 
-
-        <?php
-        include './view/footer.php';
-
-        ?>
-
     </div>
+
+<?php
+    include './view/footer.php';
+?>
+
+    
     
