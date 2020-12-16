@@ -8,7 +8,7 @@ function makeViewTable( $UserName, $Password, $Email, $Status)
         <div class=''> 
 
         
-        <form>
+        <form action='' method='post'>
 
         
         <label>$UserName</label>

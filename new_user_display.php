@@ -3,6 +3,7 @@
     // include './Controller/login_check.php';
     include './View/navbar.php';
     include './Controller/db_conn.php';
+    include './Controller/update_user.php';
     include './Controller/new_user_display.php';
     include './Model/query-new-user-display.php';
 
