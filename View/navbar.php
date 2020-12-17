@@ -9,7 +9,7 @@
 
         <!-- <div class="center-grid"> -->
             <a href="./index.php" id="link" class="Home">Home</a>
-            <a href="./manage.php" id="link" class="Manage"><span class="Manage">Manage Users</span></a>
+            <a href="./user_display.php" id="link" class="Manage"><span class="Manage">Manage Users</span></a>
             <a href="./outstandingorders.php" id="link" class="Orders">Outstanding Orders</a>
         <!-- </div> -->
 
