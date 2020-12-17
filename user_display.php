@@ -32,7 +32,8 @@
             <th>Password</th>
             <th>Email</th>
             <th>Status</th>
-            <th>Option</th>                             
+            <th></th>
+            <th></th>                             
             </tr>";
                         
             while ($row = $viewGet->fetch(PDO::FETCH_ASSOC)) {

@@ -18,12 +18,11 @@ if(isset($_POST['submit'])){
         $user = new User($db);
 
         if($user->checkUser($userData))
-        {
-           $welcome =  $username . " " . "has been deleted";
+        {           
            $_POST = '';
            unset($_POST);
            echo "<script>   history.pushState({}, '', ''); </script>"; 
-          
+           header("Location:./user_display.php");
         }
         else
         {
