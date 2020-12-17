@@ -1,3 +1,4 @@
+<body class='orders'>
 <?php 
     include './View/header.php';
     // include './Controller/login_check.php';
@@ -92,9 +93,11 @@ function topFunction() {
 
 </script>
 
+</div>    
+
         <?php
     include './View/footer.php';
     ?>
 
-</div>    
+
 

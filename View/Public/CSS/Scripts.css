@@ -27,6 +27,9 @@ body.delete{
     background-color: #252e5e;
 }
 
+body.orders{
+    background-color: #9f1224;
+}
 
 .text{
     text-align: center;
@@ -214,7 +217,7 @@ div.form-css{
     margin-bottom: 24px;
 }
 
-/* management */
+/* Management */
     /* Menu */
         .users-grid{
             display: grid;
