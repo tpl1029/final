@@ -5,7 +5,7 @@
 if(isset($_POST['update'])){
     session_start();
     $_SESSION["username"] = $_POST['username'];
-    header("Location:./update_user_new.php");
+    header("Location:./updateuser.php");
     echo $_SESSION["username"];
 }
 

@@ -1,52 +1,37 @@
 <?php
-$welcome = $username = $password = "";
-$username_err = $password_err = "";
+$welcome = $username = "";
+$username_err ="";
  
 // Processing form data when form is submitted
 if(isset($_POST['submit'])){
-    require './Model/query-deleteuser.php';    
-
-    // Validate username
-    if(empty(trim($_POST["username"])) ){
-        $username_err = "Please enter a username.";
-    } 
-    
-    elseif (empty(trim($_POST["password"]))) {      
-    
-        $password_err = "Please enter a password.";
-    }
-    
-    else{
-
-        // should return JSON with success as true
+    require './Model/query-delete-user.php';   
+  
         
         $POST = filter_var_array($_POST, FILTER_SANITIZE_STRING);
-        $username = trim(htmlentities($POST["username"]));
-        $password = trim(htmlentities($POST["password"]));
+        $username = trim(htmlentities($POST["username"]));        
         
 
         $userData = [
-            "username" => $username,
-            "password" => $password            
+            "username" => $username                       
           ];
 
         $user = new User($db);
 
         if($user->checkUser($userData))
-        {
-           $welcome =  $username . " " . "has been deleted";
-           
-
-          
+        {           
+           $_POST = '';
+           unset($_POST);
+           echo "<script>   history.pushState({}, '', ''); </script>"; 
+           header("Location:./user_display.php");
         }
         else
         {
-            $username_err = "That account could not be located.";
+            $username_err = "That account could not be deleted.";
         }      
         
      
     }
-}
+
 
 
 

@@ -46,7 +46,7 @@ if(isset($_POST['submit'])){
 
         if($user->checkUser($userData))
         {
-           $welcome =  $username . " " . "has been added";
+            header("Location:./user_display.php");
            
 
           
