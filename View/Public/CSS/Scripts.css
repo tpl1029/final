@@ -380,3 +380,7 @@ div.form-css{
 
 
 /* Orders */
+
+.form-input{
+    display: none;
+}

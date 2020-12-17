@@ -3,8 +3,8 @@
     // include './Controller/login_check.php';
     include './View/navbar.php';
     include './Controller/db_conn.php';
-    include './Controller/update_user.php';
-    include './Controller/new_user_display.php';
+    // include './Controller/update_user.php';
+    include './Controller/user_display_process.php';
     include './Model/query-new-user-display.php';
 
     $database = new Database();
@@ -13,26 +13,27 @@
     $view = new View($db);
 
     $viewGet = $view->viewRead();
-
+    include './Controller/user_update_process.php';
+    include './Controller/new_delete_user.php';    
     ?>
 
 
         <!-- Loops though people (db rows) -->
 <div class = "orders-grid">     
-    <h1 class="orders-text">Outstanding Orders</h1>
+    <h1 class="orders-text">Users</h1>
     
  <div class = "orders-table">       
         <?php
 
 
-            // echo "<table>
-            // <tr >
-            // <th> User Name</th>
-            // <th>Password</th>
-            // <th>Email</th>
-            // <th>Status</th>
-            // <th>Option</th>                             
-            // </tr>";
+            echo "<table>
+            <tr >
+            <th> User Name</th>
+            <th>Password</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Option</th>                             
+            </tr>";
                         
             while ($row = $viewGet->fetch(PDO::FETCH_ASSOC)) {
                     // variables
