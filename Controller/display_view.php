@@ -14,9 +14,9 @@ function makeViewTable( $FirstName, $LastName, $make, $model, $year, $vin, $orde
         <td>{$model}</td>
         <td>{$year}</td>
         <td>{$vin}</td>
-        <td>{$orderamount}</td>   
-        <td>{$paymentamount}</td>   
-        <td>{$outstandingbalance}</td>       
+        <td>\${$orderamount}</td>   
+        <td>\${$paymentamount}</td>   
+        <td>\${$outstandingbalance}</td>       
     </tr>";
     
 
