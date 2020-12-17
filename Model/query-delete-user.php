@@ -7,12 +7,11 @@
         public function checkUser($data)
         {
             // variables
-            $userName = $data["username"];
-            $password = $data ["password"];
+            $userName = $data["username"];           
             
 
             // Prepare a select statement
-            $query = "SELECT username FROM users WHERE username = '$userName' AND Password = '$password'";
+            $query = "SELECT username FROM users WHERE username = '$userName'";
             
             $results = $this->conn->prepare($query);
             
@@ -26,7 +25,7 @@
             
             else
             { 
-                $query = "DELETE FROM users WHERE Username = '$userName' AND Password = '$password'";
+                $query = "DELETE FROM users WHERE Username = '$userName' ";
     
                 $results = $this->conn->prepare($query);
                 

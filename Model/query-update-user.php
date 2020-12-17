@@ -7,15 +7,14 @@
         public function checkUser($data)
         {
             // variables
-            $userName = $data["username"];
-            $password = $data ["password"];
+            $userName = $data["username"];            
             $update_username = $data["update_username"];
             $update_password = $data ["update_password"];
             $update_email = $data["update_email"];           
             
             
             // Prepare a select statement
-            $query = "SELECT UserName FROM users WHERE UserName = '$userName' AND Password = '$password'";
+            $query = "SELECT UserName FROM users WHERE UserName = '$userName'";
             
             $results = $this->conn->prepare($query);
             
@@ -32,7 +31,7 @@
                 // Upate a username
                 if(empty(trim($_POST["update_password"]))&&empty(trim($_POST["update_email"]))){
 
-                $query = "UPDATE users SET UserName = '$update_username' WHERE UserName = '$userName' AND Password = '$password'";
+                $query = "UPDATE users SET UserName = '$update_username' WHERE UserName = '$userName' ";
     
                 $results = $this->conn->prepare($query);
                 
@@ -49,7 +48,7 @@
                 // Update a Password
                 elseif(empty(trim($_POST["update_username"]))&&empty(trim($_POST["update_email"]))){
 
-                    $query = "UPDATE users SET Password = '$update_password' WHERE UserName = '$userName' AND Password = '$password'";
+                    $query = "UPDATE users SET Password = '$update_password' WHERE UserName = '$userName' ";
         
                     $results = $this->conn->prepare($query);
                     
@@ -62,7 +61,7 @@
                 // Update an Email
                 elseif(empty(trim($_POST["update_username"]))&&empty(trim($_POST["update_password"]))){
 
-                    $query = "UPDATE users SET Email = '$update_email' WHERE UserName = '$userName' AND Password = '$password'";
+                    $query = "UPDATE users SET Email = '$update_email' WHERE UserName = '$userName' ";
             
                     $results = $this->conn->prepare($query);
                         
@@ -75,7 +74,7 @@
                 // Update a Username and Password
                     elseif(empty(trim($_POST["update_email"]))){
 
-                        $query = "UPDATE users SET UserName = '$update_username', Password = '$update_password' WHERE UserName = '$userName' AND Password = '$password'";
+                        $query = "UPDATE users SET UserName = '$update_username', Password = '$update_password' WHERE UserName = '$userName' ";
                 
                         $results = $this->conn->prepare($query);
                             
@@ -91,7 +90,7 @@
                 // Update a Username and Email
                         elseif(empty(trim($_POST["update_password"]))){
 
-                            $query = "UPDATE users SET UserName = '$update_username', Email = '$update_email' WHERE UserName = '$userName' AND Password = '$password'";
+                            $query = "UPDATE users SET UserName = '$update_username', Email = '$update_email' WHERE UserName = '$userName' ";
                     
                             $results = $this->conn->prepare($query);
                                 
@@ -107,7 +106,7 @@
                 // Update a Password and Email
                         elseif(empty(trim($_POST["update_username"]))){
 
-                            $query = "UPDATE users SET Password = '$update_password', Email = '$update_email' WHERE UserName = '$userName' AND Password = '$password'";
+                            $query = "UPDATE users SET Password = '$update_password', Email = '$update_email' WHERE UserName = '$userName' ";
                         
                             $results = $this->conn->prepare($query);
                                     
@@ -119,7 +118,7 @@
                 // Update Username, Password, and Email
                         else{
 
-                            $query = "UPDATE users SET UserName = '$update_username', Password = '$update_password', Email = '$update_email' WHERE UserName = '$userName' AND Password = '$password'";
+                            $query = "UPDATE users SET UserName = '$update_username', Password = '$update_password', Email = '$update_email' WHERE UserName = '$userName' ";
                                 
                             $results = $this->conn->prepare($query);
                                             
