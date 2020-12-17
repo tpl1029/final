@@ -309,7 +309,7 @@ div.form-css{
         display: grid;
         grid-column: 1;
         grid-row: 2;
-        grid-template-columns: 1;
+        grid-template-columns: 1fr auto 1fr;
         grid-template-rows: auto auto;
         background-color: #9f1224;
     }
@@ -320,8 +320,9 @@ div.form-css{
         color: white;
     }
 
+
     .orders-table{
-        grid-column: 1;
+        grid-column: 2;
         grid-row: 2;
         margin-left: auto;
         margin-right: auto;
@@ -337,19 +338,25 @@ div.form-css{
             }
 
 
-
-    /* .view{
-        grid-row: 3;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
-        margin-top: 24px;
-        margin-bottom: 24px;
-    } */
-
-
+    #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: blue; /* Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 18px; /* Increase font size */
+      }
+      
+      #myBtn:hover {
+        background-color: #555; /* Add a dark-grey background on hover */
+      }
 
 
 /* Orders */

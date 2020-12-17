@@ -17,7 +17,7 @@ function makeViewTable( $UserName, $Password, $Email, $Status)
             <input type='text' name='username' id='username' class='form-control' value='$UserName' >
             </div>
             <td> <input type='submit' class='btn btn-primary' value='Update User' name='update' id='update'> </td>
-            <td> <input type='submit' class='btn btn-danger' value='Delete User' name='submit' id='submit'> </td> 
+            <td> <input type='submit' class='btn btn-danger' value='Delete User' name='submit' id='submit' onClick=\"javascript: return confirm('Are You Sure You Want To Delete This User?');\"> </td> 
             </form>
             </td>
 
