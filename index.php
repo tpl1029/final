@@ -22,7 +22,6 @@
 
             <div class="repair-info">
                 <p class="p-repairs" id="style-font">We do all of sorts of repairs on cars:</p>
-                <br>
                     <ul class="p-repairs" id="style-font">
                         <li>Oil/oil filter changed.</li>
                         <li>Wiper blades replacement.</li>

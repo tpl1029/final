@@ -1,6 +1,5 @@
 html, body{
-    height: auto;
-    margin: auto;
+    min-height: 100vh;
     position: sticky;
 }
 
@@ -56,7 +55,7 @@ div.form-css{
 
 .navbar-grid{
     display: grid;
-    grid-template-columns: 1fr 335px 335px 355px 1fr;
+    grid-template-columns: auto auto auto auto auto;
     grid-template-rows: auto auto;
     grid-row: 1;
     border-bottom: solid 1px black;
@@ -106,22 +105,25 @@ div.form-css{
 .Home{
     grid-column: 2;
     grid-row: 2;
+    margin-left: auto;
 }
 
 .Manage{
     grid-column: 3;
     grid-row: 2;
+    margin-left: auto;
 }
 
 .Orders{
     grid-column: 4;
     grid-row: 2;
+    margin-left: auto;
 }
 
 .right-grid{
     grid-column: 5;
     grid-row: 2;
-    margin-left: 320px;
+    margin: auto;
 }
 
 #link{
@@ -133,9 +135,9 @@ div.form-css{
 
 .info-grid{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    margin: 25px 0px 25px 0px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin: 70px;
 }
 
 .service{
@@ -145,7 +147,7 @@ div.form-css{
 }
 
 .repair{
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 2;
     margin-left: auto;
 }
@@ -156,34 +158,38 @@ div.form-css{
     margin-right: auto;
 }
 
-.img-paper, .img-service{
-    float: left;
+.img-paper, .img-service, .img-repair{
+    width: 100%;
+    height: auto;
 }
 
-.p-repairs{
-    float: left;
-    margin-top: 10px;
+.img-service{
+    margin-bottom: 50px;
+}
+
+.img-paper{
+    margin-top: 50px;
 }
 
 .serivce-info {
-    margin: auto 30px;
+    margin: auto;
 }
 
 .repair-info {
-    margin: auto 260px;
-    grid-column: 1/3;
+    margin: auto;
+    grid-column: 2;
     grid-row: 2;
-}  
+}
 
 .repair-info > ul{
     margin-left: 70px;
 }
 
 .paper-info {
-    margin: auto 30px;
+    margin: auto;
 }
 #style-font{
-    font-size: 30px;
+    font-size: 1.7vw;
 }
 
 
