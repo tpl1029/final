@@ -20,5 +20,8 @@
                 <input type="submit" class="btn btn-primary" value="Logout" name="logout" id="logout" >
             </form>
         </div>
+        <div class = "welcome">
+        <?php echo 'Hello:' . ' ' . $_SESSION["username"];?>
+        </div>
     </div>
 <!-- Navbar -->
