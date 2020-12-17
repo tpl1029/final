@@ -249,6 +249,7 @@ div.form-css{
             grid-row: 1;
             margin-left: auto;
             margin-top: 5px;
+            margin-right: 5px;
         }    
 
     /* Menu */
@@ -353,7 +354,5 @@ div.form-css{
 
 /* Orders */
 
-.form-input{
-    display: none;
-}
+
 

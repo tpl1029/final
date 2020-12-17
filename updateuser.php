@@ -15,9 +15,9 @@
      -->
 <div class="update-grid">
         <div class="update-text">
-                <h2>Update a User</h2>
+                <h2>Update User</h2>
                 <p>Please fill out this form to update a user. Note: If you leave a
-                field blank <br> that information will not be updated!</p>
+                field blank, <br> that information will not be updated!</p>
         </div>  
 
         <div class="user-css">      
