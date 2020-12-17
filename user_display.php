@@ -1,3 +1,5 @@
+<body class="manage">
+
 <?php 
     include './View/header.php';
     // include './Controller/admin_check.php';
@@ -62,12 +64,8 @@
 
         <!-- Loops through people (db rows) -->
     </div>
-
-    
-
-        <?php
-    include './View/footer.php';
-    ?>
-
 </div>    
 
+<?php
+    include './View/footer.php';
+?>

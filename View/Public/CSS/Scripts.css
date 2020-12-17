@@ -8,7 +8,10 @@ body.login{
 }
 
 body.index{
-    background-color: rgb(139, 139, 139)
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../Images/gray.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body.manage{
@@ -25,6 +28,10 @@ body.update{
 
 body.delete{
     background-color: #252e5e;
+}
+
+body.order{
+    background-color: #9f1224;
 }
 
 
@@ -48,8 +55,9 @@ div.form-css{
 
 .web-grid{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto auto 40px;
+    min-height: 100vh;
+
 }
 
 
@@ -63,10 +71,8 @@ div.form-css{
 
 .footer{
     grid-column: 1;
-    grid-row: 3;
     display: grid;
-    grid-template-columns: 275px auto ;
-    grid-template-rows: auto;
+    grid-template-columns: auto;
     border-top: solid 1px black;
 }
 
@@ -148,8 +154,7 @@ div.form-css{
 
 .repair{
     grid-column: 1;
-    grid-row: 2;
-    margin-left: auto;
+    grid-row: 1;
 }
 
 .paper{
@@ -158,40 +163,37 @@ div.form-css{
     margin-right: auto;
 }
 
-.img-paper, .img-service, .img-repair{
-    width: 100%;
+.img-repair{
+    width: 50%;
     height: auto;
-}
-
-.img-service{
-    margin-bottom: 50px;
-}
-
-.img-paper{
-    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .serivce-info {
-    margin: auto;
-}
-
-.repair-info {
-    margin: auto;
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.repair-info > ul{
-    margin-left: 70px;
+    margin-top: 50px;
 }
 
 .paper-info {
     margin: auto;
+    grid-column: 1;
+    grid-row: 2;
 }
-#style-font{
-    font-size: 1.7vw;
+.repair-info {
+    grid-column: 1;
+    grid-row: 3;
+    margin-top: 50px;
 }
 
+
+#style-font{
+    font-size: 30px;
+}
+
+.p-services,.p-papers{
+    text-align: center;
+}
 
 .table, th, td {
     border: 2px solid black;
@@ -222,7 +224,6 @@ div.form-css{
             grid-row: 2;
             grid-template-columns: 1;
             grid-template-rows: auto 76vh;
-            background-color: #252e5e;
         }
         
         .users-text{
@@ -310,7 +311,6 @@ div.form-css{
         grid-row: 2;
         grid-template-columns: 1;
         grid-template-rows: auto auto;
-        background-color: #9f1224;
     }
 
     .orders-text{
@@ -357,3 +357,14 @@ div.form-css{
     display: none;
 }
 
+@media only screen and (max-width: 896px){
+    #link{
+        font-size: 15px;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 689px){
+    
+}
+   

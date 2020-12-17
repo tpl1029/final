@@ -1,3 +1,4 @@
+<body class="order">
 <?php 
     include './View/header.php';
     // include './Controller/login_check.php';
@@ -65,12 +66,8 @@
 
         <!-- Loops through people (db rows) -->
     </div>
-
-    
-
-        <?php
-    include './View/footer.php';
-    ?>
-
 </div>    
 
+<?php
+    include './View/footer.php';
+?>
