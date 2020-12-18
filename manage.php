@@ -1,4 +1,4 @@
-<body class="manage">
+<body class="">
 <?php
     include './View/header.php';
     include './View/navbar.php';

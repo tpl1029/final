@@ -6,18 +6,20 @@
     include './view/navbar.php';
 
     ?>
-     <!-- Website Information -->
-        <div class="info-grid">
-            <div class="service">   
-                <img src="./View/Public/Images/service.jpg" class="img-service"> 
-            </div>
 
             <div class="serivce-info">
-                <p class="p-services" id="style-font">Welcome to Fortisure Repairs, where we make sure that our customers recieve the best customer services and are provided with the help they need!</p>
+                <p class="p-services" id="style-font"><span style='font-weight: bold;'>Welcome to Fortisure Repairs</span>, where we make sure that our customers recieve the best customer services and are provided with the help they need!</p>
             </div>
+     <!-- Website Information -->
+        <div class="info-grid">
 
             <div class="repair">
                 <img src="./View/Public/Images/repair.jpg" class="img-repair">
+            </div>
+
+            <div class="paper-info">
+                <p class="p-papers" id="style-font">As we do our repairs on vehicles, we make sure that everything works perfectly! 
+                And we even provide a way for our customers to check and recieve any status updates during the repairs!</p>
             </div>
 
             <div class="repair-info">
@@ -34,14 +36,7 @@
                     </ul>
             </div>
 
-            <div class="paper">
-                <img src="./View/Public/Images/paper.jpg" class="img-paper">
-            </div>
-
-            <div class="paper-info">
-                <p class="p-papers" id="style-font">As we do our repairs on vehicles, we make sure that everything works perfectly! 
-                And we even provide a way for our customers to check and recieve any status updates during the repairs!</p>
-            </div>
+        
         </div>
 
 
