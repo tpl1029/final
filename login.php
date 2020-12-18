@@ -3,10 +3,12 @@
         <?php 
             include './view/header.php';
             include './Controller/db_conn.php';
-
             $database = new Database();
-            $db = $database->connect();
+            $db = $database->connect();            
             include './Controller/user_login.php';
+            if($_SESSION["loggedin"] == "A"){
+                header("Location:./index.php");
+            }
         ?>
 
     <div class = "login">

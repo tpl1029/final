@@ -33,7 +33,7 @@ class Login {
                 $row = $results->fetch(PDO::FETCH_ASSOC);
                             
                 // Store data in session variables
-                $_SESSION["loggedin"] = true;
+                $_SESSION["loggedin"] = "A";
                 $_SESSION["username"] = $userName;                            
                             
 

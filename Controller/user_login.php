@@ -34,8 +34,9 @@ if(isset($_POST["login"])){
         $login = new Login($db);
         $login->loginUser($userData);
 
-        if($_SESSION["loggedin"] == true) 
-        {              
+        if($_SESSION["loggedin"] == "A") 
+        {   $_POST = '';
+            echo "<script>  history.pushState({}, '', '');</script>;";           
             header("Location:./index.php");
                   
 
