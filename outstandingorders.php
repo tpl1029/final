@@ -98,9 +98,3 @@ function topFunction() {
         <?php
     include './View/footer.php';
     ?>
-
-
-
-<?php
-    include './View/footer.php';
-?>
