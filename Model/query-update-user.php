@@ -28,8 +28,16 @@
             
             else
             { 
+                // Filter out blank updates
+
+                if(empty(trim($_POST["update_password"]))&&empty(trim($_POST["update_email"]))&&empty(trim($_POST["update_username"])))
+                    { $update_username_err = "You must enter at least one value in order to make a change!";
+                    echo $update_username_err;
+                    
+                }
+                
                 // Upate a username
-                if(empty(trim($_POST["update_password"]))&&empty(trim($_POST["update_email"]))){
+                elseif(empty(trim($_POST["update_password"]))&&empty(trim($_POST["update_email"]))){
 
                 $query = "UPDATE users SET UserName = '$update_username' WHERE UserName = '$userName' ";
     
@@ -131,6 +139,8 @@
                             }else{ 
                                 return true;}
                         }
+
+                        
                             
                 
             }
