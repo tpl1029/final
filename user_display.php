@@ -22,48 +22,48 @@
         <!-- Loops though people (db rows) -->
 <div class = "users-grid">     
     <h1 class="users-text">Users</h1>
-    <div class = "add-user">
-                    <a href="./insertuser.php" id="manage-link" class="btn btn-success">Add A New User</a>
-                </div>
-    
- <div class = "users-table">       
-        <?php
+        <div class = "add-user">
+            <a href="./insertuser.php" id="manage-link" class="btn btn-success">Add A New User</a>
+        </div>
+        
+        <div class = "users-table">       
+            <?php
 
 
-            echo "<table>
-            <tr >
-            <th> User Name</th>
-            <th>Password</th>
-            <th>Email</th>
-            <th>Status</th>
-            <th></th>
-            <th></th>                             
-            </tr>";
-                        
-            while ($row = $viewGet->fetch(PDO::FETCH_ASSOC)) {
-                    // variables
+                echo "<table>
+                <tr >
+                <th> User Name</th>
+                <th>Password</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th></th>
+                <th></th>                             
+                </tr>";
+                            
+                while ($row = $viewGet->fetch(PDO::FETCH_ASSOC)) {
+                        // variables
 
-                    $UserName = $row['UserName'];
-                    $Password = $row['Password'];
-                    $Email = $row['Email'];
-                    $Status = $row['Status'];
+                        $UserName = $row['UserName'];
+                        $Password = $row['Password'];
+                        $Email = $row['Email'];
+                        $Status = $row['Status'];
 
-                    // variables
+                        // variables
 
-                    makeViewTable($UserName, $Password, $Email, $Status); 
+                        makeViewTable($UserName, $Password, $Email, $Status); 
 
-                } 
+                    } 
 
-                echo " </table> ";
-            ?>
-
-
-
-            <!-- Put your people cards here, they can be listed vertically -->
+                    echo " </table> ";
+                ?>
 
 
-        <!-- Loops through people (db rows) -->
-    </div>
+
+                <!-- Put your people cards here, they can be listed vertically -->
+
+
+            <!-- Loops through people (db rows) -->
+        </div>
 </div>    
 
 <?php
