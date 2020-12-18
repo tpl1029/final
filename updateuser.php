@@ -19,10 +19,15 @@
                 <p>Please fill out this form to update a user. Note: If you leave a
                 field blank, <br> that information will not be updated!</p>
         </div>  
-        <!-- <?php
-                // echo "You are about to update: . $_SESSION['update_username']";
+        <div class = 'username'>
+        <h2>
+         <?php          
+                echo                
+                 'You are about to update:' . ' ' . $_SESSION["update_username"] ;
+                ?>
+                </h2>
+            </div>
 
-                ?> -->
         <div class="user-css">      
 
 
