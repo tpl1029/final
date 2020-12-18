@@ -6,7 +6,7 @@
             $database = new Database();
             $db = $database->connect();            
             include './Controller/user_login.php';
-            // include './Controller/no_re-login.php';
+            include './Controller/no_re-login.php';
         ?>
 
     <div class = "login">
