@@ -6,9 +6,7 @@
             $database = new Database();
             $db = $database->connect();            
             include './Controller/user_login.php';
-            if($_SESSION["loggedin"] == "A"){
-                header("Location:./index.php");
-            }
+            // include './Controller/no_re-login.php';
         ?>
 
     <div class = "login">

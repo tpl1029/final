@@ -10,10 +10,7 @@ class Login {
             // variables
             $userName = $data["username"];
             $password = $data ["password"];
-
-
-
-            //$password = password_hash($password, PASSWORD_DEFAULT);
+            
 
             $hashed_query = "SELECT UserName, Password FROM users WHERE UserName = '$userName' AND Password = '$password' ";
 

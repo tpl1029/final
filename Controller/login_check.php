@@ -1,7 +1,7 @@
 <?php
 
 
-if(!isset($_SESSION["username"])){
+if($_SESSION["loggedin"] != "A"){
 
     header("Location:./login.php");
 }

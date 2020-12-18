@@ -2,7 +2,7 @@
     <?php 
 
     include './view/header.php';
-    // include './Controller/login_check.php';
+    include './Controller/login_check.php';
     include './view/navbar.php';
 
     ?>

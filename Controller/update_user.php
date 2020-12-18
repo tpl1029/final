@@ -6,7 +6,7 @@ $update_email_err  = $update_username_err = $update_password_err = $update_confi
 // Processing form data when form is submitted
 if(isset($_POST['submit'])){
     require './Model/query-update-user.php';
-    $username = $_SESSION["username"];    
+    $username = $_SESSION["update_username"];    
 
    
         
