@@ -78,6 +78,11 @@ body.orders{
         border-bottom: solid 1px black;
     }
 
+    .dropdown{
+        display: none;
+        background-color: #6c757d;
+        border-color: gray;
+    }
 
     .left-grid{
         grid-column: 1;
@@ -120,12 +125,18 @@ body.orders{
         margin: auto;
     }
 
+    #logout{
+        background-color: #6c757d;;
+        margin: auto;
+        border-color: gray;
+    }
+
     .welcome{
         font-weight: bolder;
         font-size: 20px;
         color: black;
         margin-left: auto;
-        margin-right: 5px;
+        margin-right: auto;
     }
 
 /* Navbar */
@@ -403,6 +414,42 @@ body.orders{
 }
 
 @media only screen and (max-width: 689px){
+    .dropdown{
+        display: block;
+        grid-column: 3;
+        grid-row: 2;
+        margin: auto;
+    }
+
+    .img-repair{
+        display: none;
+    }
+
+    .left-grid{
+        display: none;
+    }
+
+    .Home{
+        display: none;
+    }
+
+    .Manage{
+        display: none;
+    }
+
+    .Orders{
+        display: none;
+    }
+
+    #style-font{
+        font-size: 15px;
+    }
+
+    .fort{
+        font-size: 30px;
+    }
+
+
 
 }
    
